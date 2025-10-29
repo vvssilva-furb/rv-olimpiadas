@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class QuestionSquare : MonoBehaviour
+public class AnswerButton : MonoBehaviour
 {
-    public QuestionData question;
     public QuizManager quizManager;
 
     private Renderer rend;
     private Color originalColor;
-    public Color highlightColor = Color.yellow;
+    public Color highlightColor = Color.red;
+	public int idx;
 
     void Start()
     {
@@ -17,10 +17,9 @@ public class QuestionSquare : MonoBehaviour
 
     void OnMouseEnter()
     {
-if (!question.answered)
-{
+
     rend.material.color = highlightColor;
-}
+
     }
 
     void OnMouseExit()
@@ -31,11 +30,8 @@ if (!question.answered)
     // Ensure the object has a Collider for OnMouseDown to work
     private void OnMouseDown()
     {
-if (!question.answered)
-{
-        // You can add checks here for UI blocking, or require left mouse only
-        if (quizManager != null && question != null)
-            quizManager.ShowQuestion(question);
-}
+
+            quizManager.OnAnswerClicked(idx);
+
     }
 }

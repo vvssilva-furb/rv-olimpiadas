@@ -7,51 +7,59 @@ public class QuizManager : MonoBehaviour
     [Header("UI References")]
     public TextMeshProUGUI questionText;
     public Button[] optionButtons = new Button[4];
-    public GameObject popup; // a panel that shows when correct, disabled by default
+public TextMeshProUGUI popup;
+
 
     private QuestionData currentQuestion;
+
+
+
+void Start()
+    {
+popup.gameObject.SetActive(false);
+        // Safe to access other components, scene objects, etc.
+        Debug.Log("Start: MyComponent fully initialized");
+    }
 
     public void ShowQuestion(QuestionData question)
     {
         if (question == null) return;
 
         currentQuestion = question;
-        questionText.text = question.question;
 
-        for (int i = 0; i < optionButtons.Length; i++)
+	string _questionText = question.question + "\n";
+        for (int i = 0; i < question.options.Length; i++)
         {
-            int idx = i; // local copy for closure
-            var btn = optionButtons[i];
-            var label = btn.GetComponentInChildren<TextMeshProUGUI>();
-            label.text = (i < question.options.Length) ? question.options[i] : "";
-
-            btn.onClick.RemoveAllListeners();
-            btn.onClick.AddListener(() => OnAnswerClicked(idx));
+            _questionText += question.options[i]+  "\n";
         }
 
-        popup.SetActive(false);
-        gameObject.SetActive(true); // ensure board visible
+	questionText.text = _questionText;
+
+        popup.gameObject.SetActive(false);
     }
 
-    private void OnAnswerClicked(int index)
+    public void OnAnswerClicked(int index)
     {
+Debug.Log("answer clicked");
         if (currentQuestion == null) return;
+
+	popup.gameObject.SetActive(true);
 
         bool correct = (index == currentQuestion.correctIndex);
         if (correct)
         {
-            popup.SetActive(true);
+            
+		popup.text = "CERTO";
         }
         else
         {
-            // optional: give feedback for wrong answer
-            // e.g. shake button, show message, etc.
+            popup.text = "ERRADO";
         }
     }
 
     // Optional helper to close popup from a button
     public void ClosePopup()
     {
-        popup.SetActive(false);
+        popup.gameObject.SetActive(false);
     }
 }
