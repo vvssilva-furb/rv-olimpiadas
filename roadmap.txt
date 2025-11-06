@@ -1,0 +1,11 @@
+- configurar multiplayer
+	- vai obrigar 5 jogadores?
+	- o mesmo jogador pode trocar de sala?
+- mostrar anéis conforme vai completando
+- avatar mais humano
+- sala de vitória com a tocha olímpica
+
+? animação de confeti quando acerta
+? áudio quando acerta ou erra
+? animar pra acender e fazer barulho
+? deixar popup mais bonito

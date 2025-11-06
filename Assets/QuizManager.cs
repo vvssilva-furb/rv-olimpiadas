@@ -46,15 +46,9 @@ Debug.Log("answer clicked");
 	popup.gameObject.SetActive(true);
 
         bool correct = (index == currentQuestion.correctIndex);
-        if (correct)
-        {
-            
-		popup.text = "CERTO";
-        }
-        else
-        {
-            popup.text = "ERRADO";
-        }
+
+            FindFirstObjectByType<PopupTextController>().ShowMessage(correct ? "CERTO" : "ERRADO", correct ? Color.green : Color.red);
+        
     }
 
     // Optional helper to close popup from a button

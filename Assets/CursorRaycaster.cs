@@ -6,11 +6,10 @@ public class CursorRaycaster : MonoBehaviour
 
     void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, 100f, hoverLayer))
-        {
-            Debug.DrawLine(ray.origin, hit.point, Color.red); // visualize in Scene view
-            Debug.Log("Cursor hovering over: " + hit.collider.name);
-        }
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //if (Physics.Raycast(ray, out RaycastHit hit, 100f, hoverLayer))
+        //{
+        //    Debug.DrawLine(ray.origin, hit.point, Color.red); // visualize in Scene view
+        //}
     }
 }
