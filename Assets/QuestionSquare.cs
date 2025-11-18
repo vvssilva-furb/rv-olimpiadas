@@ -13,6 +13,7 @@ public class QuestionSquare : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         originalColor = rend.material.color;
+        question.answered = false;
     }
 
     void OnMouseEnter()
@@ -25,7 +26,15 @@ if (!question.answered)
 
     void OnMouseExit()
     {
-        rend.material.color = originalColor;
+        if (question.answered)
+        {
+            rend.material.color = new Color(0.133f, 0.294f, 0.196f);
+
+        }
+        else
+        {
+            rend.material.color = originalColor;
+        }
     }
 
     // Ensure the object has a Collider for OnMouseDown to work

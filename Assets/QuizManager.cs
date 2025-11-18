@@ -1,6 +1,7 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 public class QuizManager : MonoBehaviour
 {
@@ -8,17 +9,35 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI questionText;
     public Button[] optionButtons = new Button[4];
 public TextMeshProUGUI popup;
-
+    public float displayDuration = 2.5f;
+    public AneisOlimpicosController aneisOlimpicosController;
+    public AneisOlimpicosController.Ring ringIndex;
 
     private QuestionData currentQuestion;
+    private int correctAnswersCount = 0;
 
 
 
-void Start()
+    void Start()
     {
 popup.gameObject.SetActive(false);
-        // Safe to access other components, scene objects, etc.
-        Debug.Log("Start: MyComponent fully initialized");
+    }
+
+    private Coroutine currentRoutine;
+
+    public void EraseQuestion()
+    {
+        if (currentRoutine != null)
+            StopCoroutine(currentRoutine);
+
+        currentRoutine = StartCoroutine(EraseQuestionRoutine());
+    }
+
+    private IEnumerator EraseQuestionRoutine()
+    {
+        yield return new WaitForSeconds(displayDuration);
+
+        questionText.text = "";
     }
 
     public void ShowQuestion(QuestionData question)
@@ -47,8 +66,24 @@ Debug.Log("answer clicked");
 
         bool correct = (index == currentQuestion.correctIndex);
 
-            FindFirstObjectByType<PopupTextController>().ShowMessage(correct ? "CERTO" : "ERRADO", correct ? Color.green : Color.red);
-        
+        if (correct)
+        {
+            currentQuestion.answered = true;
+            currentQuestion = null;
+            correctAnswersCount++;
+
+            FindFirstObjectByType<PopupTextController>().ShowMessage(correct ? "CERTO" : "ERRADO", correct ? Color.green : Color.red, displayDuration);
+            EraseQuestion();
+
+            if (correctAnswersCount == 3)
+            {
+                aneisOlimpicosController.ColorRing(ringIndex);
+            }
+        }
+        else
+        {
+            FindFirstObjectByType<PopupTextController>().ShowMessage(correct ? "CERTO" : "ERRADO", correct ? Color.green : Color.red, displayDuration);
+        }
     }
 
     // Optional helper to close popup from a button

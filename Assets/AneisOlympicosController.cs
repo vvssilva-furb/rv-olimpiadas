@@ -1,10 +1,18 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Rendering.CameraUI;
 
 public class AneisOlimpicosController : MonoBehaviour
 {
+    public enum Ring
+    {
+        Europa = 0,
+        Asia = 1,
+        Africa = 2,
+        Oceania = 3,
+        Americas = 4
+    }
+
     public Image anelEuropa;
     public Image anelAsia;
     public Image anelAfrica;
@@ -27,34 +35,31 @@ public class AneisOlimpicosController : MonoBehaviour
         ResetRings();
     }
 
-    public void ColorRing(int idx)
+    public void ColorRing(Ring idx)
     {
-        var ring = anelEuropa;
+        Image ring = anelEuropa;
 
         switch (idx)
         {
-            case 1:
+            case Ring.Asia:
                 ring = anelAsia;
                 break;
 
-            case 2:
+            case Ring.Africa:
                 ring = anelAfrica;
                 break;
 
-            case 3:
+            case Ring.Oceania:
                 ring = anelOceania;
                 break;
 
-            case 4:
+            case Ring.Americas:
                 ring = anelAmericas;
                 break;
         }
 
-        if (ring.color != Color.black)
-        {
-            ring.color = ringColors[idx];
-            coloredCount++;
-        }
+        
+            ring.color = ringColors[(int)idx];
     }
 
     public void ResetRings()

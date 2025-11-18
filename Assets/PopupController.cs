@@ -5,20 +5,19 @@ using System.Collections;
 public class PopupTextController : MonoBehaviour
 {
     public TextMeshProUGUI popupText;
-    public float displayDuration = 4f;
 
     private Coroutine currentRoutine;
 
-    public void ShowMessage(string message, Color color)
+    public void ShowMessage(string message, Color color, float displayDuration)
     {
         // If another message is already showing, stop it
         if (currentRoutine != null)
             StopCoroutine(currentRoutine);
 
-        currentRoutine = StartCoroutine(ShowMessageRoutine(message, color));
+        currentRoutine = StartCoroutine(ShowMessageRoutine(message, color, displayDuration));
     }
 
-    private IEnumerator ShowMessageRoutine(string message, Color color)
+    private IEnumerator ShowMessageRoutine(string message, Color color, float displayDuration)
     {
         popupText.text = message;
         popupText.color = color;
