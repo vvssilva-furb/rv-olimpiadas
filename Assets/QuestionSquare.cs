@@ -26,15 +26,11 @@ if (!question.answered)
 
     void OnMouseExit()
     {
-        if (question.answered)
-        {
-            rend.material.color = new Color(0.133f, 0.294f, 0.196f);
-
-        }
-        else
+        if (!question.answered)
         {
             rend.material.color = originalColor;
         }
+
     }
 
     // Ensure the object has a Collider for OnMouseDown to work
@@ -44,7 +40,7 @@ if (!question.answered)
 {
         // You can add checks here for UI blocking, or require left mouse only
         if (quizManager != null && question != null)
-            quizManager.ShowQuestion(question);
+            quizManager.ShowQuestion(this, question);
 }
     }
 }

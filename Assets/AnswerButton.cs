@@ -17,13 +17,14 @@ public class AnswerButton : MonoBehaviour
 
     void OnMouseEnter()
     {
-
-    rend.material.color = highlightColor;
+        quizManager.OnAnswerMouseEnter(idx);
+        rend.material.color = highlightColor;
 
     }
 
     void OnMouseExit()
     {
+        quizManager.OnAnswerMouseExit(idx);
         rend.material.color = originalColor;
     }
 

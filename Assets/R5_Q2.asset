@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257d630db6424bd44addb68f7de7313e, type: 3}
+  m_Name: R5_Q2
+  m_EditorClassIdentifier: 
+  question: "O nadador norte-americano Michael Phelps \xE9 considerado um dos maiores
+    atletas da hist\xF3ria das Olimp\xEDadas. Ele conquistou diversas medalhas representando
+    os Estados Unidos em competi\xE7\xF5es realizadas tamb\xE9m no continente americano,
+    como em Atenas, Pequim e Rio de Janeiro.\r\nO que torna Phelps t\xE3o impressionante
+    nos Jogos Ol\xEDmpicos?\r"
+  options:
+  - "Ele ganhou medalhas em v\xE1rios esportes diferentes"
+  - "\xC9 o atleta com o maior n\xFAmero de medalhas ol\xEDmpicas da hist\xF3ria"
+  - Foi o primeiro nadador a competir aos 16 anos
+  - "\xC9 o atleta mais alto das Olimp\xEDadas"
+  answered: 0
+  correctIndex: 1

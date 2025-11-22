@@ -10,22 +10,13 @@ public class PopupTextController : MonoBehaviour
 
     public void ShowMessage(string message, Color color, float displayDuration)
     {
-        // If another message is already showing, stop it
-        if (currentRoutine != null)
-            StopCoroutine(currentRoutine);
-
-        currentRoutine = StartCoroutine(ShowMessageRoutine(message, color, displayDuration));
-    }
-
-    private IEnumerator ShowMessageRoutine(string message, Color color, float displayDuration)
-    {
         popupText.text = message;
         popupText.color = color;
         popupText.enabled = true;
+    }
 
-        yield return new WaitForSeconds(displayDuration);
-
+    public void EraseMessage()
+    {
         popupText.enabled = false;
-        currentRoutine = null;
     }
 }

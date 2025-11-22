@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 257d630db6424bd44addb68f7de7313e, type: 3}
-  m_Name: Q2
+  m_Name: R3_Q2
   m_EditorClassIdentifier: 
-  question: "qual \xE9 a b?"
+  question: "Wayde van Niekerk bateu recorde mundial.\r\nEm qual prova?\r"
   options:
-  - a...
-  - b...
-  - c...
-  - d...
-  correctIndex: 1
+  - 100 m
+  - 200 m
+  - 400 m
+  - Revezamento
+  answered: 0
+  correctIndex: 2

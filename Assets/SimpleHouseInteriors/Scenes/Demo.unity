@@ -260,6 +260,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1751655939}
   m_SourcePrefab: {fileID: 100100000, guid: 5edfbdb8cf574444bb569e16753c8efd, type: 3}
+--- !u!1 &859210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859211}
+  m_Layer: 0
+  m_Name: SpawnPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859210}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -71.73523, y: 0, z: -36.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4748054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1611,7 +1642,7 @@ Transform:
   m_GameObject: {fileID: 72741721}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000008344649}
-  m_LocalPosition: {x: -68.57, y: 3.23, z: -35.24}
+  m_LocalPosition: {x: -48.329994, y: 3.23, z: -34.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2315,7 +2346,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0126519995
+      value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.y
@@ -2327,7 +2358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.33
+      value: -5.4800014
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4406,7 +4437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0126519995
+      value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.y
@@ -4418,7 +4449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.33
+      value: -5.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6371,7 +6402,7 @@ Transform:
   m_GameObject: {fileID: 305810467}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000008344649}
-  m_LocalPosition: {x: -68.57, y: 3.23, z: -35.24}
+  m_LocalPosition: {x: -48.329994, y: 3.23, z: -34.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6841,6 +6872,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5f9a66f95d8884044ba9163096adeaa1, type: 3}
   m_PrefabInstance: {fileID: 63183013}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &331771732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331771733}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &331771733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331771732}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -149.12524, y: 0, z: -36.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &333198575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e13710708cbeaf24586a9261713070af, type: 3}
@@ -7690,7 +7752,7 @@ MonoBehaviour:
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 12
+  m_fontSizeMin: 4
   m_fontSizeMax: 12
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -8011,6 +8073,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b117019e68c5a2f42821b530f09c2d1a, type: 3}
   m_PrefabInstance: {fileID: 431944387}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &422859394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422859395}
+  m_Layer: 0
+  m_Name: SpawnPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422859395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422859394}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -89.98523, y: 0, z: -36.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425050150
 GameObject:
   m_ObjectHideFlags: 0
@@ -8935,7 +9028,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0126519995
+      value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.y
@@ -8947,7 +9040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.33
+      value: -5.4800014
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10312,6 +10405,8 @@ MonoBehaviour:
   displayDuration: 4
   aneisOlimpicosController: {fileID: 1418607290}
   ringIndex: 4
+  player: {fileID: 699809008}
+  next: {fileID: 692871002}
 --- !u!4 &526030144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
@@ -10339,7 +10434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: ba4f9aa3fffef5d4fbf3e26c18d9b98c, type: 2}
+  question: {fileID: 11400000, guid: 26a6c69a29105224d9c07385ff7ee3a7, type: 2}
   quizManager: {fileID: 526030141}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!65 &529734714
@@ -11625,6 +11720,8 @@ MonoBehaviour:
   displayDuration: 4
   aneisOlimpicosController: {fileID: 1418607290}
   ringIndex: 3
+  player: {fileID: 699809008}
+  next: {fileID: 331771733}
 --- !u!4 &613874662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
@@ -12588,7 +12685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: 36d80a88ed87edc4499e6927cf2441c3, type: 2}
+  question: {fileID: 11400000, guid: d1ff98b4e60866543ada64bf134bf02d, type: 2}
   quizManager: {fileID: 526030141}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1001 &688141789
@@ -12842,6 +12939,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1069944784}
   m_SourcePrefab: {fileID: 100100000, guid: 7af93ea503b158c43ad16ee39d002742, type: 3}
+--- !u!1 &692871001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692871002}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692871002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692871001}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -167.48523, y: 0, z: -36.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &696788648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a5c4a01ce1f0def488d5112f01490f41, type: 3}
@@ -13038,6 +13166,7 @@ GameObject:
   - component: {fileID: 699809013}
   - component: {fileID: 699809014}
   - component: {fileID: 699809015}
+  - component: {fileID: 699809016}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -13054,7 +13183,7 @@ Transform:
   m_GameObject: {fileID: 699809008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000008344649}
-  m_LocalPosition: {x: -68.17, y: 1.8299999, z: -37.74}
+  m_LocalPosition: {x: -47.93, y: 1.8299999, z: -36.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13191,6 +13320,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846e266d0f270bc4f8af45653d1a5adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &699809016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699809008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6df5d4390a315a4eb2dd031116cb695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 331771733}
 --- !u!1001 &700171707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13812,7 +13954,7 @@ MonoBehaviour:
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 12
+  m_fontSizeMin: 4
   m_fontSizeMax: 12
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -14038,6 +14180,8 @@ MonoBehaviour:
   displayDuration: 4
   aneisOlimpicosController: {fileID: 1418607290}
   ringIndex: 3
+  player: {fileID: 0}
+  next: {fileID: 0}
 --- !u!4 &769959731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
@@ -14844,7 +14988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: 36d80a88ed87edc4499e6927cf2441c3, type: 2}
+  question: {fileID: 11400000, guid: bd5824a11e3104641b1b8835e0ec0e8e, type: 2}
   quizManager: {fileID: 2081968660}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1001 &836581304
@@ -15517,7 +15661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: c4be789e430f7a447a5fec16c41fc501, type: 2}
+  question: {fileID: 11400000, guid: d521fd374ee7df546ad7e6eb0dcc5cb5, type: 2}
   quizManager: {fileID: 526030141}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &874404224 stripped
@@ -15657,7 +15801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: c4be789e430f7a447a5fec16c41fc501, type: 2}
+  question: {fileID: 11400000, guid: ec2582cdc3b28674fb5c00285f52f71b, type: 2}
   quizManager: {fileID: 2081968660}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1001 &886313108
@@ -18323,7 +18467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: 36d80a88ed87edc4499e6927cf2441c3, type: 2}
+  question: {fileID: 11400000, guid: cf88b4e1a8c528f419fd68c105f94667, type: 2}
   quizManager: {fileID: 1516756158}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!65 &1029206073
@@ -19337,6 +19481,8 @@ MonoBehaviour:
   displayDuration: 4
   aneisOlimpicosController: {fileID: 1418607290}
   ringIndex: 0
+  player: {fileID: 699809008}
+  next: {fileID: 422859395}
 --- !u!4 &1096174157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
@@ -21458,7 +21604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: c4be789e430f7a447a5fec16c41fc501, type: 2}
+  question: {fileID: 11400000, guid: 2abe0c8d0c0f1744db781f899a3566ab, type: 2}
   quizManager: {fileID: 613874659}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1001 &1219366880
@@ -22700,11 +22846,11 @@ MonoBehaviour:
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 12
+  m_fontSizeMin: 4
   m_fontSizeMax: 12
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 16
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -25405,7 +25551,7 @@ MonoBehaviour:
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 12
+  m_fontSizeMin: 4
   m_fontSizeMax: 12
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -25424,7 +25570,7 @@ MonoBehaviour:
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
   m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
+  m_enableExtraPadding: 1
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
@@ -25978,7 +26124,7 @@ MonoBehaviour:
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 12
+  m_fontSizeMin: 4
   m_fontSizeMax: 12
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -26753,7 +26899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: ba4f9aa3fffef5d4fbf3e26c18d9b98c, type: 2}
+  question: {fileID: 11400000, guid: 29bb2ee2e232f014ea870ba1ad9accea, type: 2}
   quizManager: {fileID: 2081968660}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!65 &1505748108
@@ -27121,6 +27267,8 @@ MonoBehaviour:
   displayDuration: 4
   aneisOlimpicosController: {fileID: 1418607290}
   ringIndex: 1
+  player: {fileID: 699809008}
+  next: {fileID: 1921204381}
 --- !u!1 &1518056083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 7af93ea503b158c43ad16ee39d002742, type: 3}
@@ -27167,6 +27315,37 @@ MonoBehaviour:
   quizManager: {fileID: 1096174154}
   highlightColor: {r: 1, g: 0, b: 0, a: 1}
   idx: 1
+--- !u!1 &1519135984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519135985}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1519135985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519135984}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -129.26523, y: 0, z: -36.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1521904969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b021dc60227ca9042bb1428222ab5814, type: 3}
@@ -29400,7 +29579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: ba4f9aa3fffef5d4fbf3e26c18d9b98c, type: 2}
+  question: {fileID: 11400000, guid: d59de20d0411387469a2e9b53fd6b1c3, type: 2}
   quizManager: {fileID: 613874659}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!65 &1677648414
@@ -29604,7 +29783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: ba4f9aa3fffef5d4fbf3e26c18d9b98c, type: 2}
+  question: {fileID: 11400000, guid: 4e096758e48576f4a8fbe50e79c39d23, type: 2}
   quizManager: {fileID: 1516756158}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!65 &1682287957
@@ -30711,7 +30890,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0126519995
+      value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.y
@@ -30723,7 +30902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.33
+      value: -5.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32038,7 +32217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0126519995
+      value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalScale.y
@@ -32050,7 +32229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.33
+      value: -5.4800014
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33007,6 +33186,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffd1bd9c3b484fa4990437c8e98294d3, type: 3}
+--- !u!1 &1921204380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921204381}
+  m_Layer: 0
+  m_Name: SpawnPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921204381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921204380}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -109.44524, y: 0, z: -36.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1921684230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 555dd9515ebd76f499825e5041ae7766, type: 3}
@@ -34604,7 +34814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: 36d80a88ed87edc4499e6927cf2441c3, type: 2}
+  question: {fileID: 11400000, guid: 853247e8cd19d1e419ce1bdaf3273e3e, type: 2}
   quizManager: {fileID: 613874659}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &2019740217 stripped
@@ -35863,7 +36073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad826c4076acd984aab5778554f3bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: c4be789e430f7a447a5fec16c41fc501, type: 2}
+  question: {fileID: 11400000, guid: 2ee22e56b54b6be4489641023ddeaf18, type: 2}
   quizManager: {fileID: 1516756158}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!65 &2073648717
@@ -36239,6 +36449,8 @@ MonoBehaviour:
   displayDuration: 4
   aneisOlimpicosController: {fileID: 1418607290}
   ringIndex: 2
+  player: {fileID: 699809008}
+  next: {fileID: 1519135985}
 --- !u!4 &2081968663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8f8dab3970b65a408ce11ecc3cb3cb9, type: 3}
@@ -36881,3 +37093,9 @@ SceneRoots:
   - {fileID: 473448684}
   - {fileID: 1416014487}
   - {fileID: 1417755359}
+  - {fileID: 859211}
+  - {fileID: 422859395}
+  - {fileID: 1921204381}
+  - {fileID: 1519135985}
+  - {fileID: 331771733}
+  - {fileID: 692871002}

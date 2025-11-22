@@ -23,6 +23,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
+        if (!controller.enabled)
+            return;
+
         // read movement input (WASD, stick, etc.)
         Vector2 input = move.action.ReadValue<Vector2>();
         Vector3 moveDir = new Vector3(input.x, 0, input.y);

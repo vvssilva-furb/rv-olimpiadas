@@ -19,8 +19,6 @@ public class AneisOlimpicosController : MonoBehaviour
     public Image anelOceania;
     public Image anelAmericas;
 
-    private int coloredCount = 0;
-
     private readonly Color[] ringColors = new Color[]
     {
         new Color(0f, 0.45f, 0.73f),  // Blue
@@ -64,8 +62,6 @@ public class AneisOlimpicosController : MonoBehaviour
 
     public void ResetRings()
     {
-        coloredCount = 0;
-
         anelEuropa.color = Color.black;
         anelAsia.color = Color.black;
         anelAfrica.color = Color.black;
