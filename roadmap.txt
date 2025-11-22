@@ -1,9 +1,7 @@
-- integrar lógica com sala bonita e testar
-- criar 5 salas e vincular com anéis
-- criar sala da tocha olímpica
 - lógica pra teleportar pra tocha olímpica quando termina
 - mostrar resposta quando passa o cursor no botão
 - tela inicial e pra recomeçar
+- colorir objetos por fora quando acerta
 
 - multiplayer
 
