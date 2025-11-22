@@ -1,11 +1,15 @@
-- configurar multiplayer
-	- vai obrigar 5 jogadores?
-	- o mesmo jogador pode trocar de sala?
-- mostrar anéis conforme vai completando
-- avatar mais humano
-- sala de vitória com a tocha olímpica
+- integrar lógica com sala bonita e testar
+- criar 5 salas e vincular com anéis
+- criar sala da tocha olímpica
+- lógica pra teleportar pra tocha olímpica quando termina
+- mostrar resposta quando passa o cursor no botão
+- tela inicial e pra recomeçar
 
-? animação de confeti quando acerta
-? áudio quando acerta ou erra
-? animar pra acender e fazer barulho
-? deixar popup mais bonito
+- multiplayer
+
+? avatar mais humano
+? melhorar popup de acerto/erro:
+	? texto mais bonito
+	? animação de confeti quando acerta
+	? áudio
+

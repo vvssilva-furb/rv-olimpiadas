@@ -8,7 +8,6 @@ public class QuizManager : MonoBehaviour
     [Header("UI References")]
     public TextMeshProUGUI questionText;
     public Button[] optionButtons = new Button[4];
-public TextMeshProUGUI popup;
     public float displayDuration = 2.5f;
     public AneisOlimpicosController aneisOlimpicosController;
     public AneisOlimpicosController.Ring ringIndex;
@@ -20,7 +19,6 @@ public TextMeshProUGUI popup;
 
     void Start()
     {
-popup.gameObject.SetActive(false);
     }
 
     private Coroutine currentRoutine;
@@ -46,23 +44,21 @@ popup.gameObject.SetActive(false);
 
         currentQuestion = question;
 
-	string _questionText = question.question + "\n";
+        string _questionText = question.question + "\n";
         for (int i = 0; i < question.options.Length; i++)
         {
-            _questionText += question.options[i]+  "\n";
+            _questionText += question.options[i] + "\n";
         }
 
-	questionText.text = _questionText;
+        questionText.text = _questionText;
 
-        popup.gameObject.SetActive(false);
     }
 
     public void OnAnswerClicked(int index)
     {
-Debug.Log("answer clicked");
+        Debug.Log("answer clicked");
         if (currentQuestion == null) return;
 
-	popup.gameObject.SetActive(true);
 
         bool correct = (index == currentQuestion.correctIndex);
 
@@ -89,6 +85,5 @@ Debug.Log("answer clicked");
     // Optional helper to close popup from a button
     public void ClosePopup()
     {
-        popup.gameObject.SetActive(false);
     }
 }
