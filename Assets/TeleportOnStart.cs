@@ -1,12 +1,23 @@
+using System.Collections;
 using UnityEngine;
 
 public class TeleportOnStart : MonoBehaviour
 {
     public Transform spawnPoint;
 
-    void Start()
+    private IEnumerator Start()
     {
-        Debug.Log("First teleport");
-        transform.position = spawnPoint.position;
+        // Wait one frame so the controller initializes
+        yield return null;
+        
+        GameObject player = GameObject.Find("Player");
+
+        player.transform.position = spawnPoint.position;
+
+        // Optional: also zero velocity BEFORE the controller moves again
+        var controller = player.GetComponent<CharacterController>();
+        controller.enabled = false;
+        player.transform.position = spawnPoint.position;
+        controller.enabled = true;
     }
 }
