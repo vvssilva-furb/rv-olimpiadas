@@ -11,3 +11,14 @@
 	? animação de confeti quando acerta
 	? áudio
 
+X player as vezes não move
+X não está mudando de sala
+X cliente desconecta sozinho
+X anéis aparecer brancos
+X jogar em 2
+tela de espera, com opção de começar jogo
+sair da sala
+colorir anéis sem jogador
+
+
+

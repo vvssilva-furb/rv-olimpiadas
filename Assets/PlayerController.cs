@@ -27,28 +27,18 @@ public class PlayerController : NetworkBehaviour
 
         if (IsOwner)
         {
-            movement.enabled = true;
-            look.enabled = true;
-
-            // 🔥 Enable inputs here!!!
-            movement.move.action.Enable();
+            vcam.gameObject.SetActive(true);
+            vcam.Follow = look.transform;
+            vcam.LookAt = look.transform;
         }
         else
         {
-            movement.enabled = false;
-            look.enabled = false;
+            vcam.gameObject.SetActive(false);
         }
 
         // LOCAL PLAYER SETUP
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        // Find the VCam in the scene (not in prefab)
-        vcam = FindFirstObjectByType<CinemachineCamera>();
-
-        // Assign LookAt + Follow targets
-        vcam.Follow = look.transform;
-        vcam.LookAt = look.transform;
 
         ClientConnector.Instance.RequestJoinQueueServerRpc();
     }
