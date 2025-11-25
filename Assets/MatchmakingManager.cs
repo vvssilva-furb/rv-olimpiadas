@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class MatchmakingManager : NetworkBehaviour
 {
+    public int MAX_PLAYERS = 5;
     public static MatchmakingManager Instance;
 
     private List<ulong> queue = new();
 
-    private void Awake() => Instance = this;
+    private void Awake()  {
+        Instance = this;
+        }
 
     public void AddPlayerToQueue(ulong clientId)
     {
@@ -22,17 +25,12 @@ public class MatchmakingManager : NetworkBehaviour
 
     private void TryStartMatch()
     {
-        if (queue.Count < 1) return;
-
-        // Get first 2
-        var players = new List<ulong>() { queue[0] };
-        queue.RemoveRange(0, 1);
-
-        StartMatch(players);
+        StartMatch(queue);
+        queue.Clear();
     }
 
     private void StartMatch(List<ulong> players)
     {
-        MatchManager.Instance.BeginMatch(players);
+        MatchManager.Instance.BeginMatch();
     }
 }

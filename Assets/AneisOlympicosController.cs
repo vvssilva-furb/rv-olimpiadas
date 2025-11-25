@@ -1,10 +1,14 @@
 using System.Collections;
+using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AneisOlimpicosController : MonoBehaviour
+public class AneisOlimpicosController : NetworkBehaviour
 {
+    public static AneisOlimpicosController Instance;
+
+    private void Awake() => Instance = this;
     public enum Ring
     {
         Europa = 0,
@@ -34,8 +38,16 @@ public class AneisOlimpicosController : MonoBehaviour
         ResetRings();
     }
 
+    [ClientRpc]
+    public void ColorRingClientRpc(Ring ring)
+    {
+        ColorRing(ring);  // your existing function
+    }
     public void ColorRing(Ring idx)
     {
+        if (!NetworkManager.Singleton.IsClient)
+            return;
+
         Image ring = anelEuropa;
 
         switch (idx)
@@ -57,8 +69,8 @@ public class AneisOlimpicosController : MonoBehaviour
                 break;
         }
 
-        
-            ring.color = ringColors[(int)idx];
+        Debug.Log($"Coloring ring {ring}");
+        ring.color = ringColors[(int)idx];
     }
 
     public void ResetRings()

@@ -2,8 +2,9 @@
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using Unity.Netcode;
 
-public class QuizManager : MonoBehaviour
+public class QuizManager : NetworkBehaviour
 {
     [Header("UI References")]
     public TextMeshProUGUI questionText;
@@ -119,7 +120,6 @@ public class QuizManager : MonoBehaviour
             if (correctAnswersCount == 3)
             {
                 StartCoroutine(MoveToNext());
-                aneisOlimpicosController.ColorRing(ringIndex);
             }
 
             return true;

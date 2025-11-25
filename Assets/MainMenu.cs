@@ -10,10 +10,19 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         NetworkManager.Singleton.StartClient();
+        
+        if (NetworkManager.Singleton != null)
+            NetworkManager.Singleton.OnClientDisconnectCallback += OnClientDisconnected;
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    private void OnClientDisconnected(ulong clientId)
+    {
+        Debug.Log($"Client disconnected: {clientId}. Returning to main menu.");
+        SceneManager.LoadScene("MainMenu"); // your main menu scene name
     }
 }

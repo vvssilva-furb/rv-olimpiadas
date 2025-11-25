@@ -36,11 +36,22 @@ public class PlayerController : NetworkBehaviour
             vcam.gameObject.SetActive(false);
         }
 
+        movement.movementLocked = true;
+
         // LOCAL PLAYER SETUP
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+
+        //ClientConnector.Instance.RequestJoinQueueServerRpc();
+    }
+
+    [ClientRpc]
+    public void OnMatchStartedClientRpc()
+    {
+        movement.movementLocked = false;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        ClientConnector.Instance.RequestJoinQueueServerRpc();
     }
 
     [ClientRpc]
