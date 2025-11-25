@@ -46,13 +46,15 @@ public class QuizManager : MonoBehaviour
     {
         yield return new WaitForSeconds(displayDuration);
 
-        CharacterController cc = player.GetComponent<CharacterController>();
-        cc.enabled = false;               // ❤️ stop snap-back
+        MatchManager.Instance.NotifyQuestionProgressServerRpc();
 
-        player.transform.position = next.position;
+        //CharacterController cc = player.GetComponent<CharacterController>();
+        //cc.enabled = false;               // ❤️ stop snap-back
 
-        yield return null;                // wait one frame
-        cc.enabled = true;                // ❤️ re-enable safely
+        //player.transform.position = next.position;
+
+        //yield return null;                // wait one frame
+        //cc.enabled = true;                // ❤️ re-enable safely
     }
 
     public void ShowQuestion(QuestionSquare square, QuestionData question)

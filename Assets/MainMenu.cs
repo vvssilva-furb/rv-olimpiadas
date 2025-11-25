@@ -1,3 +1,5 @@
+using System.IO;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(gameSceneName);
+        NetworkManager.Singleton.StartClient();
     }
 
     public void QuitGame()

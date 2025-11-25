@@ -1,7 +1,8 @@
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ThirdPersonLook : MonoBehaviour
+public class ThirdPersonLook : NetworkBehaviour
 {
     [Header("Input System")]
     public InputAction look;  // define or bind this in inspector
@@ -18,6 +19,9 @@ public class ThirdPersonLook : MonoBehaviour
 
     void Update()
     {
+        if (!IsOwner)
+            return;
+        
         Vector2 delta = look.ReadValue<Vector2>() * sensitivity * Time.deltaTime;
         yaw += delta.x;
         pitch -= delta.y;

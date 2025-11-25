@@ -12,12 +12,14 @@ public class AnswerButton : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
+        if (rend != null)
         originalColor = rend.material.color;
     }
 
     void OnMouseEnter()
     {
         quizManager.OnAnswerMouseEnter(idx);
+        if (rend != null)
         rend.material.color = highlightColor;
 
     }
@@ -25,6 +27,7 @@ public class AnswerButton : MonoBehaviour
     void OnMouseExit()
     {
         quizManager.OnAnswerMouseExit(idx);
+        if (rend != null)
         rend.material.color = originalColor;
     }
 

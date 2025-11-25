@@ -12,6 +12,7 @@ public class QuestionSquare : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
+        if (rend != null)
         originalColor = rend.material.color;
         question.answered = false;
     }
@@ -20,14 +21,16 @@ public class QuestionSquare : MonoBehaviour
     {
 if (!question.answered)
 {
+        if (rend != null)
     rend.material.color = highlightColor;
-}
+        }
     }
 
     void OnMouseExit()
     {
         if (!question.answered)
         {
+        if (rend != null)
             rend.material.color = originalColor;
         }
 

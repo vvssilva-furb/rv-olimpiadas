@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -62,10 +63,13 @@ public class AneisOlimpicosController : MonoBehaviour
 
     public void ResetRings()
     {
-        anelEuropa.color = Color.black;
-        anelAsia.color = Color.black;
-        anelAfrica.color = Color.black;
-        anelOceania.color = Color.black;
-        anelAmericas.color = Color.black;
+        if (!NetworkManager.Singleton.IsClient)
+            return;
+
+        anelEuropa.color = Color.white;
+        anelAsia.color = Color.white;
+        anelAfrica.color = Color.white;
+        anelOceania.color = Color.white;
+        anelAmericas.color = Color.white;
     }
 }
